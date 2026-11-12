@@ -1,0 +1,12 @@
+# Locally generated private signing keys and certificates
+/private_key.pem
+*.pem
+*.key
+/certs/*.crt
+/certs/*.mobileconfig
+/static/ca.crt
+
+# Device data and request logs
+/requests.jsonl
+/saves/*.json
+/saves/*.jsonl
