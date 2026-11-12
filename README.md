@@ -1,7 +1,7 @@
-# Band Stars revival — research bundle
+# Band Stars revival
 
 A self-hosted replacement backend for **Band Stars** (Halfbrick, discontinued).
-The game's own servers are gone; this bundle answers them locally so the game runs
+The game's own servers are gone; this project answers them locally so the game runs
 again on a phone you already own.
 
 - Android build: **1.4.2** (patched APK required, tools included)
@@ -18,7 +18,12 @@ again on a phone you already own.
 - `pip install -r requirements.txt` (only `cryptography` is needed)
 - A phone and a computer on the **same Wi-Fi network**
 
-Unzip this bundle somewhere writable and run everything from inside that folder.
+Get the code and run everything from inside its folder:
+
+```
+git clone https://github.com/Ouahie/bandstars-revival.git
+cd bandstars-revival
+```
 
 ---
 
@@ -63,7 +68,7 @@ adb push patched/*.obb /sdcard/Android/obb/com.halfbrick.bandstars/
 ## B. iPhone (stock app — needs administrator rights and DNS)
 
 The App Store build is not patched, so it still asks for the original hostnames.
-This bundle intercepts DNS for them and serves the config the stock app accepts.
+This project intercepts DNS for them and serves the config the stock app accepts.
 
 **1. Generate and trust your own certificate.** Run `python3 make_certs.py` and
 `python3 make_profile.py` to create a local certificate authority and iPhone profile.
@@ -115,7 +120,7 @@ they are re-read on every request, so you can edit them while the server runs.
   server must use the same key: `python3 server.py --port 8080 --key mykey.pem`.
 - **The iOS path uses `configs/ios.json`**, which is the original Halfbrick-signed
   config — that is what makes the unpatched app accept the server.
-- **Don't redistribute the game files.** Share this bundle; each person supplies their
+- **Don't redistribute the game files.** Share this repository; each person supplies their
   own APK/OBB/IPA.
 - This is a research/preservation project. It is not affiliated with Halfbrick.
 

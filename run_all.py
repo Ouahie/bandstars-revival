@@ -1,6 +1,6 @@
 """Start everything the phone needs, in one process.
 
-    sudo python3 -u run_all.py --ip 192.168.2.108
+    sudo python3 -u run_all.py --ip 192.168.1.50
 
 Ports are privileged, so this needs sudo (or run as root). It starts:
   * DNS on 53      - sends *.bricknet.com / *.bn.tl / *.halfbrick.com here, forwards
@@ -61,7 +61,7 @@ def start_dns(ip: str, upstream: str):
 
 def main():
     ap = argparse.ArgumentParser()
-    ap.add_argument("--ip", required=True, help="this Mac's LAN IP, e.g. 192.168.2.108")
+    ap.add_argument("--ip", required=True, help="this Mac's LAN IP, e.g. 192.168.1.50")
     ap.add_argument("--upstream", default="1.1.1.1", help="real DNS for other names")
     ap.add_argument("--universe", default=None,
                     help="API URL to hand the game (default: derived from the request)")
