@@ -1,0 +1,33 @@
+{
+ "_comment": "GUEST v1: result.sync.user.bricknetId + result.id/token (handler 0x8eee24)",
+ "variants": [
+  {
+   "_name": "GUEST-v1",
+   "_mode": "plain",
+   "_payload": {
+    "error": null,
+    "result": {
+     "sync": {
+      "user": {
+       "bricknetId": 1000001,
+       "displayName": "Player",
+       "isGuest": true
+      },
+      "transactionsProcessed": [],
+      "transactionsVerified": [],
+      "sent": 0,
+      "userData": {
+       "level": 1,
+       "coins": 0,
+       "fans": 0
+      },
+      "staticData": {},
+      "settings": {}
+     },
+     "id": "1000001",
+     "token": "0123456789abcdef0123456789abcdef"
+    }
+   }
+  }
+ ]
+}
