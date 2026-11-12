@@ -1,0 +1,29 @@
+{
+ "_comment": "SYNC reply: result mirrors the object the guest handler passes as result.sync",
+ "variants": [
+  {
+   "_name": "SYNC-v1",
+   "_mode": "plain",
+   "_payload": {
+    "error": null,
+    "result": {
+     "user": {
+      "bricknetId": 1000001,
+      "displayName": "Player",
+      "isGuest": true
+     },
+     "transactionsProcessed": [],
+     "transactionsVerified": [],
+     "sent": 0,
+     "userData": {
+      "level": 1,
+      "coins": 0,
+      "fans": 0
+     },
+     "staticData": {},
+     "settings": {}
+    }
+   }
+  }
+ ]
+}
