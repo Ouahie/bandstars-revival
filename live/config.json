@@ -1,0 +1,14 @@
+{
+ "bricknet": {},
+ "buildId": "build-so71nr",
+ "skuId": "sku-1upoq7w",
+ "version": "1.4.2",
+ "update": 0,
+ "ota": {},
+ "syncReceipting": false,
+ "adwords": {
+  "trackingEnabled": false
+ },
+ "storeUrl": "http://play.google.com/store/apps/details?id=com.halfbrick.bandstars",
+ "useLocalKeyStoreOnly": true
+}
